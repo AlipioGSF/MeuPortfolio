@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    overflow-x: hidden;
+}
+.localFotoPerfil{
+        
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.localFotoPerfil .FotoPerfil{
+    width: 250px;
+    height: 250px;
+    border: 15px solid #ffffff;
+    background-image: url(imagens/Snapchat-2106216213.jpg);
+    background-position-y:-80px;
+    background-position-x: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+main{
+    font-family: 'VT323', monospace;
+    border-radius: 20px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.topicos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 60px;
+    width: 90%;
+    color: white;
+    height: 100vh;
+}
+
+
+.arrow{
+    cursor:default;
+    margin-top:1em;
+    margin-left: 99%;
+    position: relative;
+}
+
+.arrow:hover{
+    animation-name: sobedesce;
+    animation-duration: 3s;
+
+}
+
+@keyframes sobedesce {
+    0%   {top: 0px;}
+    50% {top: 80px;}
+    100%{top: 0px}
+}
+
+
+h2{
+    margin-top: 1em;
+    font-size: 0.8em;
+}
+
+
+.projetos{
+    width: 100%;
+}
+
+
+.exibeProjeto{
+    margin-top: 1em;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.proj{
+    border: 10px solid #ffffff;
+    width: 300px;
+    height: 350px;
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.proj:nth-child(1){
+    background-color: #771AC9;
+    background-image: url(imagens/Nuinvest.svg);
+}
+
+
+
+.proj:nth-child(2){
+    background-color: royalblue;
+    background-position: center;
+    background-size: 70%;
+    background-image: url(imagens/MagisterLogoBranco.png);
+}
+.proj:nth-child(3){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-family: 'Fredoka', sans-serif;
+    background-color: rgb(214, 165, 3);
+}
+
+.projTxt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7em;
+}
+.projTxt h2{
+    font-size: 0.5em;
+}
+
+
+
+.proj:nth-child(1):hover{
+    background-size: 80%;
+}
+.proj:nth-child(2):hover{
+    background-size: 80%;
+}
+.proj:nth-child(3):hover .projTxt {
+    font-size: 90%;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    width: 100vw;
+    height: 10em;
+    color: white;
+    background-color: black;
+}
+
+.contatos{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 3em;
+    height: 80%;
+    font-size: 1.8em;
+}
+
+.links{
+    margin: 5px;
+    display: flex;
+    width: 8%;
+    justify-content: space-between;
+}
+
+.links a{
+    width: 50px;
+    height: 50px;
+}
+
+.linkedin{
+    border-radius: 50%;
+    background-color: white;
+    background-size: 120%;
+    background-position: center;
+    background-image: url(https://www.edvaldoeliezer.com.br/wp-content/uploads/2017/05/linkedin-logo.png);
+}
+
+.github{
+    border-radius: 50%;
+    background-color: white;
+    background-image: url(https://marcas-logos.net/wp-content/uploads/2020/03/GITHUB-LOGO-600x338.png);
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
