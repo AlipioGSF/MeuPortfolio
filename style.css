@@ -9,9 +9,6 @@
 }
 
 body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
     overflow-x: hidden;
 }
@@ -37,9 +34,10 @@ body{
 
 
 main{
+    margin: 0 auto;
     font-family: 'VT323', monospace;
     border-radius: 20px;
-    width: 70%;
+    width: 70vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,13 +89,13 @@ h2{
 .exibeProjeto{
     margin-top: 1em;
     display: flex;
-    width: 100%;
+    width: 1000px;
     justify-content: space-between;
 }
 
 .proj{
     border: 10px solid #ffffff;
-    width: 300px;
+    width: 30%;
     height: 350px;
     background-color: gray;
     background-repeat: no-repeat;
@@ -175,11 +173,12 @@ footer{
 .links{
     margin: 5px;
     display: flex;
-    width: 8%;
+    width: 120px;
     justify-content: space-between;
 }
 
 .links a{
+    border: 2px solid whitesmoke;
     width: 50px;
     height: 50px;
 }
@@ -187,8 +186,9 @@ footer{
 .linkedin{
     border-radius: 50%;
     background-color: white;
-    background-size: 120%;
+    background-size: 60px;
     background-position: center;
+    background-repeat: no-repeat;
     background-image: url(https://www.edvaldoeliezer.com.br/wp-content/uploads/2017/05/linkedin-logo.png);
 }
 
@@ -196,7 +196,54 @@ footer{
     border-radius: 50%;
     background-color: white;
     background-image: url(https://marcas-logos.net/wp-content/uploads/2020/03/GITHUB-LOGO-600x338.png);
-    background-size: 150%;
+    background-size: 95px;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+@media (max-width: 1200px){
+    
+    .exibeProjeto{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .proj{
+        width: 500px;
+        height: 200px;
+    }
+}
+
+@media (max-width:1105px){
+    .skills{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 830px){
+
+    .arrow{
+        display: none;
+    }
+
+    .topicos{
+        margin: 1em 0;
+    }
+
+    h1{
+        font-size:1em;
+    }
+    h2, li {
+        font-size: 0.6em;
+    }
+
+    .exibeProjeto{
+        width: 80%;
+    }
+
+    .proj{
+        width: 120%;
+    }
+    .contatos{
+        width: 75%;
+    }
 }
